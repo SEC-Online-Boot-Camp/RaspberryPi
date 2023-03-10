@@ -47,9 +47,6 @@ def detect_off():
 
 
 
-# 検知の閾値
-THRESHOLD = 30
-
 # 検知状態フラグ
 status = False
 
