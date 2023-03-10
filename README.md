@@ -76,6 +76,20 @@ pi@raspberrypi:~ $ raspivid -o Desktop/video.h264
 
 ---
 
-### Quick, Draw!
+### AI系サービス
+
+#### Quick, Draw!
 
 https://quickdraw.withgoogle.com/
+
+#### AI Programmer
+
+https://aiprogrammer.hashlab.jp/
+
+#### AI校正ツール Shodo
+
+https://shodo.ink/
+
+#### 文章要約AI タンテキ
+
+https://ai-tanteki.com/
