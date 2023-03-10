@@ -19,33 +19,6 @@ def tact_switch_callback(channel):
     print(f'status = {status}')
 
 
-# 超音波センサーでの距離測定
-def measure_distance():
-    # 超音波を一旦OFFにしてから、0.0001秒間だけ出力
-    GPIO.output(PIN_TRG, GPIO.LOW)
-    time.sleep(0.001)
-    GPIO.output(PIN_TRG, GPIO.HIGH)
-    time.sleep(0.001)
-    GPIO.output(PIN_TRG, GPIO.LOW)
-
-    # ECHOピンがONになったら計測開始
-    t_start = 0
-    while True:
-        if GPIO.input(PIN_ECH) == GPIO.HIGH:
-            t_start = time.time()
-            break
-        
-    # ECHOピンがOFFになったら計測終了
-    t_end = 0
-    while True:
-        if GPIO.input(PIN_ECH) == GPIO.LOW:
-            t_end = time.time()
-            break
-
-    # 距離 = 音速 * 到達時刻 / 2
-    return 34000 * (t_end - t_start) / 2
-
-
 # 検知オン処理
 def detect_on():
     # 検知状態をオンに変更
