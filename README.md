@@ -1,5 +1,22 @@
 # ラズパイ実習
 
+#### バージョンの確認とPython3系への切り替え
+
+```
+# バージョンの確認
+pi@raspberrypi:~ $ python --version
+Python 2.7.16
+
+# Python3系への切り替え
+pi@raspberrypi:~ $ cd /usr/bin
+pi@raspberrypi:~ $ sudo unlink python
+pi@raspberrypi:~ $ sudo ln -s python3 python
+
+# バージョンの確認
+pi@raspberrypi:~ $ python --version
+Python 3.7.3
+```
+
 ### TensorFlowとKerasのインストール
 
 #### 実行に必要なモジュールの追加
