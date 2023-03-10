@@ -73,3 +73,9 @@ pi@raspberrypi:~ $ raspivid -o Desktop/video.h264
 ### SunFounder Da Vinci Kit for Raspberry Pi
 
 <https://docs.sunfounder.com/projects/davinci-kit/en/latest/component_list.html>
+
+---
+
+### Quick, Draw!
+
+https://quickdraw.withgoogle.com/
